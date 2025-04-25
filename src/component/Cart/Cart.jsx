@@ -8,7 +8,7 @@ import { Formik, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
 const items = [1,1];
-const style = {
+export const style = {
     position: 'absolute',
     top: '50%',
     left: '50%',
@@ -35,7 +35,7 @@ const validationSchema = Yup.object().shape({
 });
 
 
-const Cart = () => {
+export const Cart = () => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -210,4 +210,4 @@ const Cart = () => {
         </div>
     )
 }
-export default Cart;
+//export default Cart;
